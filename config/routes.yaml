@@ -1,3 +1,26 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+hello-index:
+   path: /hello/1
+   controller: App\Controller\HelloController::index
+Home-index:
+   path: /
+   controller: App\Controller\HomeController::index
+User-add:
+   path: /user
+   methods: POST
+   controller: App\Controller\UserController::AddUser
+User-update:
+   path: /user
+   methods: PUT
+   controller: App\Controller\UserController::UpdateUser
+User-delete:
+   path: /user
+   methods: DELETE
+   controller: App\Controller\UserController::DeleteUser
+User-Get:
+   path: /user
+   controller: App\Controller\UserController::index
+User-GetId:
+   path: /user/{id}
+   controller: App\Controller\UserController::getuserbyid
+
+
